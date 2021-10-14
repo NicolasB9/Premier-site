@@ -1,0 +1,195 @@
+.page
+{
+	height: 525px;
+	width: 1200px;
+	margin: auto;
+	border: solid black;
+	font-size: 14px;
+	box-shadow: 2px 4px 3px black;
+	font-family: Arial;
+	padding: 12px;
+}
+
+.banner
+{
+	text-align: center;
+	border: solid black;
+}
+
+.menu
+ {
+ 	border: solid black;
+ 	float:left;
+ 	margin-top: 20px;
+ 	width: 15%;
+ 	height: 367px;
+ 	text-align: center;
+}
+
+
+
+ .info
+ {
+ 	border: solid black;
+ 	margin-top: 20px;
+ 	margin-left: 200px;
+ }
+
+ .pied2p
+ {
+ 	border: solid black;
+ 	margin-top: 20px;
+    height: 50px;
+ }
+
+
+
+.iframe
+{
+	margin: 30px;
+	align-items: center;
+}
+
+.img
+ {
+ 	float: right;
+ 	margin-right: 30px;
+ 	margin-top: 20px;
+ }
+
+
+
+--------------------------------------
+
+
+nav > ul
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+nav li
+{
+	list-style-type: none;
+}
+
+nav > ul > li
+{
+	float: left;
+	position: relative;
+}
+
+.submenuP
+{
+	display: none;
+}
+
+nav input[type=checkbox]
+{
+	display: none;
+}
+
+.menu-mobile
+{
+	display: none;
+}
+
+nav
+{
+	width: 100%;
+	background-color: #424558;
+}
+
+nav > ul::after
+{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+nav a
+{
+	display: inline-block;
+	text-decoration: none;
+}
+
+nav > ul > li > a 
+{
+	padding: 20px 30px;
+	color: #FFF;
+}
+
+nav li:hover .submenuP
+{
+	display: inline-block;
+	position: absolute;
+	top: 100%;
+	left: 0px;
+	padding: 0px;
+	z-index: 100000;
+}
+
+.submenuP list-style-type
+{
+	border-bottom: 1px solid #CCC;
+}
+
+.submenuP li a
+{
+	padding: 15px 30px;
+	font-size: 13px;
+	color: #222538;
+	width: 270px;
+}
+
+.menu-Acceuil:hover
+{
+	border-top: 5px solid #E44D26;
+	background-color: rgba(255, 37, 0, 0.15);
+}
+
+.menu-CV:hover
+{
+	border-top: 5px solid #0070BB;
+	background-color: rgba(000, 211, 79, 0.15);
+}
+
+.menu-Projets:hover
+{
+	border-top: 5px solid #F1DC4F;
+	background-color: rgba(241, 211, 79, 0.15);
+}
+
+.menu-Contact:hover
+{
+	border-top: 5px solid #BBB;
+	background-color: rgba(220, 220, 220, 0.15);
+}
+
+.menu-Veilles:hover
+{
+	border-top: 5px solid #BBB;
+	background-color: rgba(220, 220, 220, 0.15);
+}
+
+
+nav > ul > li:hover a
+{
+	padding: 15px 30px 20px 30px;
+}
+
+.menu-Projets .submenuP
+{
+	background-color: rgba(251, 216, 99);
+}
+
+
+
+.submenuP li:hover a 
+{
+	color: #EEE;
+	font-weight: bold;
+}
+
+
+
