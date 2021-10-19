@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<script type="text/javascript">
+function calculate (){
+	var a=Number(document.getElementById("P1").value);
+	var b=Number(document.getElementById("Q1").value);
+
+	var c=Number(document.getElementById("P2").value);
+	var d=Number(document.getElementById("Q2").value);
+
+	var e=Number(document.getElementById("P3").value);
+	var f=Number(document.getElementById("Q3").value);
+	document.getElementById("R1").value=(a*b);
+	document.getElementById("R2").value=(c*d);
+	document.getElementById("R3").value=(e*f);
+	document.getElementById("T1").value=(a+b+c+d+e+f);
+}
+	</script>
+</head>
+<body>
+<form>
+<center>
+<h1>Facture en JavaScript</h1>
+<table border="2" width="35%">
+<tr>
+	<td>Article :</td>
+	<td>Prix :</td>
+	<td>Quantité :</td>
+	<td>Résultat :</td>
+</tr>
+<tr>
+	<td><input type="text" placeholder="Donner une valeur" id="A1" name="A1"></td>
+	<td><input type="text" id="P1" name="P1"></td>
+	<td><input type="text" id="Q1" name="Q1"></td>
+	<td><input type="text" id="R1" name="R1"></td>
+</tr>
+<tr>
+	<td><input type="text" placeholder="Donner une valeur" id="A2" name="A2"></td>
+	<td><input type="text" id="P2" name="P2"></td>
+	<td><input type="text" id="Q2" name="Q2"></td>
+	<td><input type="text" id="R2" name="R2"></td>
+</tr>
+<tr>
+	<td><input type="text" placeholder="Donner une valeur" id="A3" name="A3"></td>
+	<td><input type="text" id="P3" name="P3"></td>
+	<td><input type="text" id="Q3" name="Q3"></td>
+	<td><input type="text" id="R3" name="R3"></td>
+</tr>
+<tr>
+	<td></td>
+	<td><input type="reset" name="Re1" value="Annuler"></td>
+	<td><input onclick="calculate()" type="button" value="Calculer"> </td>
+	<td><input type="text" id="T1" name="T1"></td>
+</tr>
+</form>
+</table>
+</center>
+</body>
+</html>
