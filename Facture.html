@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Facture</title>
+<script type="text/javascript">
+	function calculate() {
+		var x = parseInt(document.getElementById("P1").value);  
+		var y = parseInt(document.getElementById("Q1").value);
+			document.getElementById("R1").value=(x*y);
+
+		var x = parseInt(document.getElementById("P2").value); 
+		var y = parseInt(document.getElementById("Q2").value);
+			document.getElementById("R2").value=(x*y);
+
+		var x = parseInt(document.getElementById("P3").value);
+		var y = parseInt(document.getElementById("Q3").value);
+			document.getElementById("R3").value=(x*y);
+
+		var x = parseInt(document.getElementById("P4").value);
+		var y = parseInt(document.getElementById("Q4").value);
+			document.getElementById("R4").value=(x*y);
+
+		var x = parseInt(document.getElementById("P5").value);
+		var y = parseInt(document.getElementById("Q5").value);
+			document.getElementById("R5").value=(x*y);
+
+		var x = parseInt(document.getElementById("P6").value);
+		var y = parseInt(document.getElementById("Q6").value);
+			document.getElementById("R6").value=(x*y);
+
+		var x = parseInt(document.getElementById("P7").value);
+		var y = parseInt(document.getElementById("Q7").value);
+			document.getElementById("R7").value=(x*y);
+
+		var x = parseInt(document.getElementById("P8").value);
+		var y = parseInt(document.getElementById("Q8").value);
+			document.getElementById("R8").value=(x*y);
+
+		var a = parseInt(document.getElementById("R1").value); 
+		var b = parseInt(document.getElementById("R2").value);
+		var c = parseInt(document.getElementById("R3").value); 
+		var d = parseInt(document.getElementById("R4").value);
+		var e = parseInt(document.getElementById("R5").value); 
+		var f = parseInt(document.getElementById("R6").value);
+		var g = parseInt(document.getElementById("R7").value); 
+		var h = parseInt(document.getElementById("R8").value);
+
+
+
+		parseInt(document.getElementById("T1").value);
+			document.getElementById("T1").value=(a+b+c+d+e+f+g+h);
+}	
+</script>
+</head>
+<body>
+<form>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="stylefacture.css">
+<div class="entete">
+	<div class="I1">
+		<img src="logotp.jpg" width="100px" height="100px">
+	</div>
+	<div class="E1">
+		<input type="text" name="C1" id="C1" placeholder="<Nom de la compagnie>"><br>
+		<input type="text" name="C2" id="C2" placeholder="<Adresse postale>"><br>
+		<input type="text" name="C3" id="C3" placeholder="<Détails du contact>"><br>
+	</div>
+	<div class="E2">
+		<p><b>Facture</b></p>
+		<input type="text" name="C4" placeholder="<Date>"><br>
+		<input type="text" name="C5" placeholder="<No de Facture>"><br>
+	</div>
+</div>
+<div class="cordo1">
+	<div class="D1">
+		<h1>Destinataire.</h1>
+		<input type="text" name="des1" id="des1" placeholder="<Nom>"><br>
+		<input type="text" name="des2" id="des2" placeholder="<Nom de la société>"><br>
+		<input type="text" name="des3" id="des3" placeholder="<Adresse postale>"><br>
+		<input type="text" name="des4" id="des4" placeholder="<Téléphone>"><br>
+		<input type="text" name="des5" id="des5" placeholder="<Email>"><br>
+	</div>
+	<div class="E1">
+		<h1>Envoyez à.</h1>
+		<input type="text" name="env1" id="env1" placeholder="<Nom>"><br>
+		<input type="text" name="env2" id="env2" placeholder="<Nom de la société>"><br>
+		<input type="text" name="env3" id="env3" placeholder="<Adresse postale>"><br>
+		<input type="text" name="env4" id="env4" placeholder="<Téléphone>"><br>
+		<input type="text" name="env5" id="env5" placeholder="<Email>"><br>
+	</div>
+</div>
+<br>
+<center>
+<table border="2" width="50%">
+<tr>
+	<td>Article :</td>
+	<td>Prix :</td>
+	<td>Quantité :</td>
+	<td>Résultat :</td>
+</tr>
+<tr>
+	<td><input type="text" placeholder="Donner une valeur" id="A1" name="A1"></td>
+	<td><input type="text" id="P1" name="P1"></td>
+	<td><input type="text" id="Q1" name="Q1"></td>
+	<td><input type="text" id="R1" name="R1"></td>
+</tr>
+<tr>
+	<td><input type="text" placeholder="Donner une valeur" id="A2" name="A2"></td>
+	<td><input type="text" id="P2" name="P2"></td>
+	<td><input type="text" id="Q2" name="Q2"></td>
+	<td><input type="text" id="R2" name="R2"></td>
+
+</tr>
+<tr>
+	<td><input type="text" placeholder="Donner une valeur" id="A3" name="A3"></td>
+	<td><input type="text" id="P3" name="P3"></td>
+	<td><input type="text" id="Q3" name="Q3"></td>
+	<td><input type="text" id="R3" name="R3"></td>
+</tr>
+<tr>
+	<td><input type="text" placeholder="Donner une valeur" id="A3" name="A3"></td>
+	<td><input type="text" id="P4" name="P4"></td>
+	<td><input type="text" id="Q4" name="Q4"></td>
+	<td><input type="text" id="R4" name="R4"></td>
+</tr>
+<tr>
+	<td><input type="text" placeholder="Donner une valeur" id="A3" name="A3"></td>
+	<td><input type="text" id="P5" name="P5"></td>
+	<td><input type="text" id="Q5" name="Q5"></td>
+	<td><input type="text" id="R5" name="R5"></td>
+</tr>
+<tr>
+	<td><input type="text" placeholder="Donner une valeur" id="A3" name="A3"></td>
+	<td><input type="text" id="P6" name="P6"></td>
+	<td><input type="text" id="Q6" name="Q6"></td>
+	<td><input type="text" id="R6" name="R6"></td>
+</tr>
+<tr>
+	<td><input type="text" placeholder="Donner une valeur" id="A3" name="A3"></td>
+	<td><input type="text" id="P7" name="P7"></td>
+	<td><input type="text" id="Q7" name="Q7"></td>
+	<td><input type="text" id="R7" name="R7"></td>
+</tr>
+<tr>
+	<td><input type="text" placeholder="Donner une valeur" id="A3" name="A3"></td>
+	<td><input type="text" id="P8" name="P8"></td>
+	<td><input type="text" id="Q8" name="Q8"></td>
+	<td><input type="text" id="R8" name="R8"></td>
+
+<tr>
+	<td></td>
+	<td><input type="reset" name="Re1" value="Annuler"></td>
+	<td><input onclick="calculate()" type="button" value="Calculer"> </td>
+	<td><input type="text" id="T1" name="T1"></td>
+</tr>
+
+
+</form>
+</table>
+</center>
+
+
+
+
+</body>
+</html>
